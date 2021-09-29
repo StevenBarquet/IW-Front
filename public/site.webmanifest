@@ -1,0 +1,29 @@
+{
+    "short_name": "InterWare",
+    "name": "InterWare de México S.A. de C.V.",
+    "description": "En InterWare creemos que podemos hacer un mundo empresarial más eficaz e inteligente por medio de la tecnología. Generamos proyectos TI que te ayuden a aumentar el valor de tu negocio buscando y encontrando la satisfacción total de sus clientes.",
+    "icons": [
+      {
+        "src": "icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/maskable_icon.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#FFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#00C7B1",
+    "shortcuts": []
+  }

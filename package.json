@@ -1,0 +1,97 @@
+{
+  "name": "interware-cms",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12.x"
+  },
+  "description": "Strapi CMS Dockerized app build with NextJS",
+  "main": "next.config.js",
+  "author": "Israel López Tiscareño",
+  "license": "ISC",
+  "keywords": [
+    "cms",
+    "strapi",
+    "next.js",
+    "react",
+    "material-ui"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server",
+    "build": "next build",
+    "start": "NODE_ENV=production node server",
+    "deploy": "next build && next start",
+    "export": "next export",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
+    "compile-sass": "node-sass assets/scss/nextjs-material-kit-pro.scss assets/css/nextjs-material-kit-pro.css",
+    "minify-sass": "node-sass assets/scss/nextjs-material-kit-pro.scss assets/css/nextjs-material-kit-pro.min.css --output-style compressed",
+    "map-sass": "node-sass assets/scss/nextjs-material-kit-pro.scss assets/css/nextjs-material-kit-pro.css --source-map true",
+    "watch-prettier": "-- prettier --write {{event}} to {{changed}}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ext js --ext jsx",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.1.1",
+    "@apollo/react-ssr": "^4.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "animate.css": "3.7.2",
+    "classnames": "^2.2.6",
+    "deepmerge": "^4.2.2",
+    "express": "^4.17.1",
+    "formik": "^2.2.0",
+    "graphql": "^15.3.0",
+    "moment": "^2.27.0",
+    "next": "^10.0.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.0",
+    "next-offline": "^5.0.2",
+    "node-sass": "^4.14.1",
+    "nouislider": "^14.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "path": "^0.12.7",
+    "postcss": "^8.3.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.7.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.7.0",
+    "react-google-maps": "^9.4.5",
+    "react-image-gallery": "^1.0.7",
+    "react-slick": "^0.26.1",
+    "react-swipeable-views": "^0.13.9",
+    "underscore": "^1.11.0",
+    "webpack": "^4.43.0",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-custom-alias": "^1.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  }
+}

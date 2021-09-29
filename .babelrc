@@ -1,0 +1,36 @@
+{
+    "presets": ["next/babel"],
+      "plugins": [
+          [
+        "inline-react-svg",
+        {
+          "svgo": {
+            "plugins": [
+              {
+                "cleanupIDs": false
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "module-resolver",
+        {
+          "root": ["./"],
+          "alias": {
+            "assets": "./assets",
+            "components": "./components",
+            "components-sections": "./components-sections",
+            "context": "./context",
+            "gql": "./gql",
+            "layouts": "./layouts",
+            "libs": "./libs",
+            "page-sections": "./page-sections",
+            "pages": "./pages",
+            "public": "./public",
+            "utils": "./utils"
+          }
+        }
+      ]
+      ]
+  }
