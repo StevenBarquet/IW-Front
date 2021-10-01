@@ -1,39 +1,54 @@
-# Install dependencies
-FROM node:lts as dependencies
-WORKDIR /Interware_landing
-COPY package*.json ./
-RUN npm install
+# Install dependencies only when needed
+FROM node:alpine AS deps
+# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
 
-# Build production app
-FROM node:lts as builder
-WORKDIR /Interware_landing
+# Rebuild the source code only when needed
+FROM node:alpine AS builder
+WORKDIR /app
 COPY . .
-COPY --from=dependencies /Interware_landing/node_modules ./node_modules
-RUN npm run build
+COPY --from=deps /app/node_modules ./node_modules
+RUN yarn build && yarn install --production --ignore-scripts --prefer-offline
 
-#Environment variables
-ENV NODE_ENV=production
-ENV PORT=3000
+# Production image, copy all the files and run next
+FROM node:alpine AS runner
+WORKDIR /app
 
-# Config prod App for run
-FROM node:lts as runner
-WORKDIR /Interware_landing
-# If you are using a custom next.config.js file, uncomment the follow line.
-COPY --from=builder /Interware_landing/server.js ./
-COPY --from=builder /Interware_landing/next.config.js ./
-COPY --from=builder /Interware_landing/public ./public
-COPY --from=builder /Interware_landing/.next ./.next
-COPY --from=builder /Interware_landing/node_modules ./node_modules
-COPY --from=builder /Interware_landing/package.json ./package.json
+ENV NODE_ENV production
+ENV API_URL=http://localhost:1337
+ENV NEXT_TELEMETRY_DISABLED 1
 
-#Last Step
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
+# You only need to copy next.config.js if you are NOT using the default configuration
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/server.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+USER nextjs
+
 EXPOSE 3000
-CMD [ "node",  "server" ]
+
+# Next.js collects completely anonymous telemetry data about general usage.
+# Learn more here: https://nextjs.org/telemetry
+# Uncomment the following line in case you want to disable telemetry.
+
+
+CMD ["node", "server.js"]
 
 # Build
-# docker build --network host -t iw_front_image .
-# docker run --network host --name iw-front-container -d iw_front_image
+# docker build --rm --network host -t iw_front_image .
+# docker run --network host --name iw-front-container -d  iw_front_image
+# docker container logs iw-front-container
 
 # Delte
 # docker container rm iw-front-container -f
-# docker image rm -f iw_front_image 000000 000000
+# docker image ls
+# docker image rm -f iw_front_image

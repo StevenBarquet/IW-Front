@@ -14,7 +14,7 @@ import PageChange from "components/PageChange/PageChange";
 import { SettingsProvider } from "context/Settings";
 
 // Styles
-import "assets/scss/nextjs-material-kit-pro.scss";
+import "../assets/scss/nextjs-material-kit-pro.scss";
 import "animate.css/animate.min.css";
 
 Router.events.on("routeChangeStart", (url) => {
