@@ -56,7 +56,7 @@ const Form = ({ values, errors, handleChange, setFieldValue }) => {
 
   return (
     <div id="section-form" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={8} lg={11}>
           <h2 className={classes.title}>
             {form.title[`sectionTitle${language}`]}
@@ -67,7 +67,7 @@ const Form = ({ values, errors, handleChange, setFieldValue }) => {
           />
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={10}>
           <h3>
             {language === "_en" ? "Personal information" : "Datos Personales"}
@@ -144,7 +144,7 @@ const Form = ({ values, errors, handleChange, setFieldValue }) => {
           </GridContainer>
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={10}>
           <h3>
             {language === "_en" ? "Contact information" : "Datos de Contacto"}
@@ -219,7 +219,7 @@ const Form = ({ values, errors, handleChange, setFieldValue }) => {
           </GridContainer>
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={10}>
           <h3>
             {language === "_en"
@@ -286,7 +286,7 @@ const Form = ({ values, errors, handleChange, setFieldValue }) => {
           </GridContainer>
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center" className={classes.mt4rem}>
+      <GridContainer justifyContent="center" className={classes.mt4rem}>
         <Button
           type="submit"
           className={classes.learnMoreButton}

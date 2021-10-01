@@ -49,7 +49,7 @@ const Menu = ({ articleCategory, categoryID, btnHome }) => {
 
   return (
     <div id="section-menu" className={classes.margin5rem}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
           <Button
             onClick={() => articleCategory("HOME", false)}

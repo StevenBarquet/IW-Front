@@ -57,7 +57,7 @@ const RequestQuote = ({ values, errors, handleChange }) => {
 
   return (
     <div id="section-request-quote" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle title={requestQuote.title[`sectionTitle${language}`]}>
           <>
             <RenderHTML
@@ -69,7 +69,7 @@ const RequestQuote = ({ values, errors, handleChange }) => {
           </>
         </SectionTitle>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={5} md={4}>
           <CustomInput
             id="name"
@@ -107,7 +107,7 @@ const RequestQuote = ({ values, errors, handleChange }) => {
           />
         </GridItem>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={5} md={6}>
           <CustomInput
             id="company"
@@ -195,7 +195,7 @@ const RequestQuote = ({ values, errors, handleChange }) => {
         </GridItem>
       </GridContainer>
       <br />
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <Button type="submit" round color="secondary">
           {requestQuote.actionButton[`label${language}`]}
         </Button>

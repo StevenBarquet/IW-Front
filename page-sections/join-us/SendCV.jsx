@@ -52,7 +52,7 @@ const SendCV = () => {
   return (
     <div id="section-sendCV">
       <GridContainer
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         className={classes.sectionWithBackgroundColor}
       >

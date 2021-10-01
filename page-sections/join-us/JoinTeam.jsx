@@ -51,7 +51,7 @@ const JoinTeam = () => {
   return (
     <div id="section-join-team" className={classes.section}>
       <GridContainer
-        justify="center"
+        justifyContent="center"
         className={classes.sectionBackgroundColor}
       >
         <GridItem xs={12} sm={10} md={9} className={classes.textCenter}>

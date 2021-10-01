@@ -51,7 +51,7 @@ const Functioning = () => {
 
   return (
     <div id="section-funtioning" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle icon={funtioning.header.sectionIcon}>
           <RenderHTML
             html={
@@ -61,7 +61,7 @@ const Functioning = () => {
           />
         </SectionTitle>
       </GridContainer>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={9}>
           <h2 className={classes.title}>
             {funtioning.title[`sectionTitle${language}`]}

@@ -54,7 +54,7 @@ const DigitalServices = () => {
       id="section-digital-services"
       className={`${classes.sectionWithBackgroundColor} ${classes.marginTop6rem}`}
     >
-      <GridContainer justify="center" alignItems="center">
+      <GridContainer justifyContent="center" alignItems="center">
         <GridItem xs={10} sm={5} md={5} lg={5}>
           <div className={classes.titleContainer}>
             <h1>{digitalServices.title[`sectionTitle${language}`]}</h1>

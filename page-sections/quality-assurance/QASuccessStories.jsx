@@ -69,7 +69,7 @@ const QASuccessStories = () => {
 
   return (
     <div id="section-success-stories" className={`${classes.section}`}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={successStoriesQA.sectionIcon}
           title={successStoriesQA.title[`sectionTitle${language}`]}

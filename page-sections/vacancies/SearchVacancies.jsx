@@ -54,7 +54,7 @@ const SearchVacancies = () => {
       id="section-searchVacancies"
       className={classes.sectionWithBackgroundColor}
     >
-      <GridContainer justify="center" alignItems="center">
+      <GridContainer justifyContent="center" alignItems="center">
         <GridItem xs={10} sm={5} md={5} lg={5}>
           <div className={classes.titleContainer}>
             <h2>{search.title[`sectionTitle${language}`]}</h2>

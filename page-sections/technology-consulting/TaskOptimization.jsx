@@ -55,7 +55,7 @@ const TaskOptimization = () => {
 
   return (
     <div id="section-taskOptimization" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           legend={taskOptimization.legend[`sectionLegendTitle${language}`]}
           title={taskOptimization.title[`sectionTitle${language}`]}
@@ -66,7 +66,7 @@ const TaskOptimization = () => {
             <h1 className={`${classes.title} ${classes.textCenter}`}>
               {taskOptimization.titleType[`sectionTitle${language}`]}
             </h1>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <TaskOptimizationCard />
             </GridContainer>
           </div>

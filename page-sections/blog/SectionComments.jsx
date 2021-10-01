@@ -20,7 +20,7 @@ const SectionComments = ({ id }) => {
 
   return (
     <div id="section-comments" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={10}>
           <div>
             <div style={{ display: "flex" }}>

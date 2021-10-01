@@ -57,7 +57,7 @@ const PlansForYou = () => {
 
   return (
     <div id="section-plansForYou" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={plansForYou.sectionIcon}
           legend={plansForYou.legend[`sectionLegendTitle${language}`]}
@@ -102,7 +102,7 @@ const PlansForYou = () => {
               })}
             </GridContainer>
             <br />
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <Button color="secondary" round>
                 {plansForYou.actionButton[`label${language}`]}
               </Button>

@@ -32,7 +32,7 @@ const SectionArticleText = ({ article }) => {
 
   return (
     <div id="section-articleText">
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={8}>
           <RenderHTML
             className={classes.constentsArticle}

@@ -52,7 +52,7 @@ const OfferGuarantees = () => {
 
   return (
     <div id="section-offer-guarantees" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={offerGuarantees.sectionIcon}
           title={offerGuarantees.title[`sectionTitle${language}`]}

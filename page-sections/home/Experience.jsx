@@ -66,7 +66,7 @@ const Experience = () => {
   return (
     <div id="section-experience">
       <GridContainer
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         className={classes.sectionWithBackgroundColor}
       >

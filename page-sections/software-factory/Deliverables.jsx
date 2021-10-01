@@ -55,12 +55,12 @@ const Deliverables = () => {
 
   return (
     <div id="section-deliverables" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={deliverables.sectionIcon}
           title={deliverables.title[`sectionTitle${language}`]}
         >
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <DeliverablesCards />
           </GridContainer>
         </SectionTitle>

@@ -54,11 +54,11 @@ const SectionTeams = () => {
 
   return (
     <div id="section-teams" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           title={language === "_en" ? "Our experts" : "Nuestros Expertos"}
         >
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <br />
             {teams &&
               teams.map((team) => {

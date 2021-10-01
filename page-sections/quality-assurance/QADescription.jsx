@@ -49,7 +49,7 @@ const QADescription = () => {
 
   return (
     <div id="section-QADescription" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           legend={qaDescription.legend[`sectionLegendTitle${language}`]}
           title={qaDescription.title[`sectionTitle${language}`]}

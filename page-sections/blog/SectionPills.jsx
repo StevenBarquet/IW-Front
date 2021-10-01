@@ -163,7 +163,7 @@ const SectionPills = ({ categoryID, btnHome, articleCategory }) => {
         <>
           <CarouselHeader />
           <SectionInterested />
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <SectionBlogsList showImage />
             <SectionTags />
           </GridContainer>

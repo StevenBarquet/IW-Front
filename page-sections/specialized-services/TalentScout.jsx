@@ -56,7 +56,7 @@ const TalentScout = () => {
       id="section-talent-scout"
       className={classes.sectionWithBackgroundColor}
     >
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={10} sm={5} md={5} lg={5}>
           <h2>{talentScout[`talentScoutTitle${language}`]}</h2>
           <RenderHTML

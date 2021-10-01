@@ -50,7 +50,7 @@ const QAofferGuarantees = () => {
 
   return (
     <div id="section-QAofferGuarantees" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={offerGuaranteesQA.sectionIcon}
           title={offerGuaranteesQA.title[`sectionTitle${language}`]}

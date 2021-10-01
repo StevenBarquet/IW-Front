@@ -50,7 +50,7 @@ const TimeMarket = () => {
 
   return (
     <div id="section-time-market" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           title={timeMarket.title[`sectionTitle${language}`]}
           effect

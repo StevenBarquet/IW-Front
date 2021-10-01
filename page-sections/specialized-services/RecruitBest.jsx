@@ -71,7 +71,7 @@ const RecruitBest = () => {
 
   return (
     <div id="section-recruit-Best" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle title={recruitBest.title[`sectionTitle${language}`]}>
           <>
             <RenderHTML

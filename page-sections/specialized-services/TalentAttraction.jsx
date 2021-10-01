@@ -68,7 +68,7 @@ const TalentAttraction = () => {
 
   return (
     <div id="section-talent-attraction" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           title={talentAttraction.title[`sectionTitle${language}`]}
           effect
@@ -81,19 +81,19 @@ const TalentAttraction = () => {
           />
         </SectionTitle>
       </GridContainer>
-      <GridContainer justify="center" className={classes.margin8rem}>
+      <GridContainer justifyContent="center" className={classes.margin8rem}>
         <SectionTitle
           title={
             talentAttraction.talentAttractionTitle[`sectionTitle${language}`]
           }
         >
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <br />
             <TalentAttractionCards />
           </GridContainer>
         </SectionTitle>
       </GridContainer>
-      <GridContainer justify="center" className={classes.margin8rem}>
+      <GridContainer justifyContent="center" className={classes.margin8rem}>
         <GridItem xs={12} sm={6} md={4} lg={4}>
           <GridItem
             xs={12}

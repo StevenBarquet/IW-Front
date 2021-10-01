@@ -26,7 +26,7 @@ const SectionArticleInfo = ({ article }) => {
   const languageDate = language === "_en" ? "en" : "es";
   return (
     <div id="section-articleInfo" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <GridItem xs={12} sm={10} md={8}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={9}>

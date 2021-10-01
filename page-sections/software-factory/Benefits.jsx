@@ -64,12 +64,12 @@ const Benefits = () => {
 
   return (
     <div id="section-benefits" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={benefits.sectionIcon}
           title={benefits.title[`sectionTitle${language}`]}
         >
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <GridItem xs={12} sm={12} md={12}>
               <NavPills alignCenter tabs={tags()} />
             </GridItem>

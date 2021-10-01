@@ -51,7 +51,7 @@ const SectionAboutUs = () => {
 
   return (
     <div id="section-about" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           legend={aboutUs.legend[`sectionLegendTitle${language}`]}
           title={aboutUs.title[`sectionTitle${language}`]}

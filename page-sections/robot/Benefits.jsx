@@ -50,7 +50,7 @@ const Benefits = () => {
 
   return (
     <div id="section-benefits" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={benefits.sectionIcon}
           legend={benefits.legend[`sectionLegendTitle${language}`]}

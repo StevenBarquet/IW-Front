@@ -56,7 +56,7 @@ const withLayout = (Page) => {
           )} // eslint-disable-line prettier/prettier
         >
           <div className={classes.footer}>
-            <GridContainer justify="center">
+            <GridContainer justifyContent="center">
               <GridItem xs={12} sm={3} md={3} lg={3}>
                 <span>Nuestros servicios</span>
                 <ul className={classes.linksVertical}>

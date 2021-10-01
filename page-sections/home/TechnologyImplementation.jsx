@@ -56,14 +56,14 @@ const TechnologyImplementation = () => {
 
   return (
     <div id="section-technology-implementation" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           title={technologyImplementation.title[`sectionTitle${language}`]}
           subTitle={
             technologyImplementation.subtitle[`sectionSubTitle${language}`]
           }
         >
-          <GridContainer justify="center" className={classes.marginTopDefault}>
+          <GridContainer justifyContent="center" className={classes.marginTopDefault}>
             <GridItem xs={6} sm={6} md={5}>
               <div className={classes.technologyImplementation}>
                 <img

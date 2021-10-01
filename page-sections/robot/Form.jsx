@@ -55,7 +55,7 @@ const Form = ({ values, errors, handleChange }) => {
   return (
     <div id="section-form" className={classes.sectionSinPB}>
       <GridContainer
-        justify="center"
+        justifyContent="center"
         className={classes.sectionWithBackgroundColor}
       >
         <SectionTitle
@@ -70,7 +70,7 @@ const Form = ({ values, errors, handleChange }) => {
           />
         </SectionTitle>
         <GridItem xs={10} sm={8} md={8} lg={10}>
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <GridItem xs={12} sm={10} md={8}>
               <GridContainer>
                 <GridItem item xs={12} sm={6} md={6}>
@@ -154,7 +154,7 @@ const Form = ({ values, errors, handleChange }) => {
               </GridContainer>
             </GridItem>
           </GridContainer>
-          <GridContainer justify="center" className={classes.mt4rem}>
+          <GridContainer justifyContent="center" className={classes.mt4rem}>
             <Button
               type="submit"
               className={classes.learnMoreButton}

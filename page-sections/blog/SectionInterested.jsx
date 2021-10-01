@@ -65,7 +65,7 @@ const SectionInterested = () => {
       id="section-SectionInterested"
       className={`${classes.section} ${classes.margin5rem}`}
     >
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         {articles &&
           articles.map((article) => (
             <GridItem key={article.id} xs={12} sm={5} md={3} lg={3} xl={2}>

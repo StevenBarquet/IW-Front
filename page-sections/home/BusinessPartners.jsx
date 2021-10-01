@@ -55,14 +55,14 @@ const BusinessPartners = () => {
 
   return (
     <div id="section-partners" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={businessPartners.sectionIcon}
           legend={businessPartners.legend[`sectionLegendTitle${language}`]}
           title={businessPartners.title[`sectionTitle${language}`]}
           subTitle={businessPartners.subTitle[`sectionSubTitle${language}`]}
         >
-          <GridContainer justify="center">
+          <GridContainer justifyContent="center">
             <SectionBusinessPartnersCards />
           </GridContainer>
         </SectionTitle>

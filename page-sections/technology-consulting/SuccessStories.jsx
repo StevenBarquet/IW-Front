@@ -71,7 +71,7 @@ const SuccessStories = () => {
 
   return (
     <div id="section-success-stories" className={`${classes.section}`}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={successStories.sectionIcon}
           title={successStories.title[`sectionTitle${language}`]}

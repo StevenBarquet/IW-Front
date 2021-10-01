@@ -71,7 +71,7 @@ const TheyTrust = () => {
 
   return (
     <div id="section-they-trust" className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justifyContent="center">
         <SectionTitle
           icon={theyTrust.sectionIcon}
           legend={theyTrust.legend[`sectionLegendTitle${language}`]}
