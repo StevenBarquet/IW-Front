@@ -18,7 +18,7 @@ FROM node:alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
-ENV API_URL=http://localhost:1337
+ENV API_URL=http://143.198.122.81:1337
 ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN addgroup -g 1001 -S nodejs
@@ -45,7 +45,8 @@ CMD ["node", "server.js"]
 
 # Build
 # docker build --rm --network host -t iw_front_image .
-# docker run --network host --name iw-front-container -d  iw_front_image
+# docker run --network host --name iw-front-container -d iw_front_image
+# docker run --network host --name iw-front-container -d --env apiUrl=http://143.198.122.81:1337  iw_front_image
 # docker container logs iw-front-container
 
 # Delte
